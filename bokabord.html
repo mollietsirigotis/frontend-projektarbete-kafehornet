@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boka bord</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kafé Hörnet</h1>
+      <nav>
+        <a href="/">Start</a>
+        <a href="meny.html">Meny</a>
+        <a href="bokabord.html">Boka bord</a>
+      </nav>
+    </header>
+    <main>
+      <section class="boka-bord">
+        <h2>Boka bord</h2>
+        <p>
+          Fyll i formuläret så bekräftar vi via e-post inom en timme under
+          öppettid.<br />
+          Sällskap över 8 personer: ring oss.
+        </p>
+        <form>
+          <label for="namn">Namn</label>
+          <input id="namn" type="text" required />
+
+          <label for="epost">E-post</label>
+          <input id="epost" type="email" required />
+
+          <label for="datum">Datum</label>
+          <input id="datum" type="date" required />
+
+          <label for="tid">Tid</label>
+          <select name="tid" id="tid">
+            <option value="9">09:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+          </select>
+
+          <label for="antal-personer">Antal personer</label>
+          <input id="antal-personer" type="number" min="1" required />
+
+          <label for="meddelande">Meddelande (frivilligt)</label>
+          <textarea name="meddelande" id="meddelande"></textarea>
+
+          <button>Skicka bokning</button>
+        </form>
+      </section>
+      <section>
+        <h3>Bra att veta</h3>
+        <ul>
+          <li>Bordet hålls i 15 minuter efter bokad tid.</li>
+          <li>Vi har barnstolar och plats för barnvagn.</li>
+          <li>Hundar är välkomna på uteserveringen.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Hitta hit</h4>
+        <p>
+          Hörngatan 12, 118 65 Stockholm.<br />
+          Två minuter från Mariatorgets tunnelbana.
+        </p>
+        <p>&#169; Kafé Hörnet 2026</p>
+      </div>
+      <div>
+        <h4>Öppettider</h4>
+        <p>Måndag-fredag 07:30-18:00</p>
+        <p>Lördag-söndag 09:00-17:00</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p>hej@kafehornet.example</p>
+        <p>08-123 456 78</p>
+      </div>
+    </footer>
+  </body>
+</html>
